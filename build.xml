@@ -1,4 +1,7 @@
 <project name="SampleBuild" default="war" basedir=".">
+	<presetdef name="javac">
+    <javac includeantruntime="false" />
+  </presetdef>
     <taskdef resource="com/puppycrawl/tools/checkstyle/ant/checkstyle-ant-task.properties"
          classpath="WebContent/WEB-INF/lib/checkstyle-7.8.2-all.jar"/>
 	<path id="compile.classpath">
